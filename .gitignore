@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Project data & model artifacts (real user-downloaded data and trained models)
+backend/data/raw/*
+!backend/data/raw/.gitkeep
+backend/data/processed/*
+!backend/data/processed/.gitkeep
+backend/models/*
+!backend/models/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+frontend/*.tsbuildinfo
+frontend/**/*.tsbuildinfo
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,55 @@
+{
+  "name": "cascade-virality-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "test": "vitest run",
+    "gen:api": "openapi-typescript http://127.0.0.1:8000/openapi.json -o src/api/schema.d.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@tanstack/react-query": "^5.59.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "d3-hierarchy": "^3.1.2",
+    "lucide-react": "^0.453.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.13.0",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "jsdom": "^25.0.1",
+    "openapi-typescript": "^7.4.2",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "vitest": "^2.1.4"
+  },
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node@^4.24.0",
+    "esbuild": "npm:esbuild-wasm@^0.21.5"
+  }
+}
